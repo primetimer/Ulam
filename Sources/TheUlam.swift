@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum UlamType : Int {
+public enum UlamType : Int {
     case square = 0, spiral = 1, fibonacci = 2, lucas = 3, hexagon = 4, linear = 5
 }
 
@@ -19,9 +19,9 @@ let theulamexplode = TheUlamFibonacci()
 let theulamhexagon = TheUlamHexagon()
 #endif
 
-typealias SpiralXY = (x: Float, y: Float)
+public typealias SpiralXY = (x: Float, y: Float)
 
-class TheUlamBase  {
+public class TheUlamBase  {
     
     static let defcount = 3600 //##
     internal var count = defcount + 1
@@ -39,7 +39,7 @@ class TheUlamBase  {
     }
 }
 
-class TheUlamRound : TheUlamBase {
+public class TheUlamRound : TheUlamBase {
     static let sharedInstance = TheUlamRound()
     
     let pi = Float(4.0 * atan(1.0))
@@ -57,7 +57,7 @@ class TheUlamRound : TheUlamBase {
     
 }
 
-class TheUlamFibonacci : TheUlamBase {
+public class TheUlamFibonacci : TheUlamBase {
     static let sharedInstance = TheUlamFibonacci()
     private var dtheta :  Double
     static let phi = (1.0 + sqrt(5.0)) / 2.0
@@ -100,7 +100,7 @@ class TheUlamLucas : TheUlamBase {
 }
  */
 
-class TheUlamHexagon : TheUlamBase {
+public class TheUlamHexagon : TheUlamBase {
     static let sharedInstance = TheUlamFibonacci()
     
     fileprivate override init() {
@@ -146,7 +146,7 @@ class TheUlamHexagon : TheUlamBase {
     
 }
 
-class TheUlamRect : TheUlamBase {
+public class TheUlamRect : TheUlamBase {
     static let sharedInstance = TheUlamRect()
     
     
@@ -178,7 +178,7 @@ class TheUlamRect : TheUlamBase {
     }
 }
 
-class TheUlamLinear : TheUlamBase {
+public class TheUlamLinear : TheUlamBase {
     static let sharedInstance = TheUlamLinear()
     private (set) var spokes = 30
     

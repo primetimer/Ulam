@@ -16,14 +16,14 @@ import Cocoa
 public typealias Color = NSColor
 #endif
 
-class UlamDrawer:  NSObject {
+public class UlamDrawer:  NSObject {
     
-    var scalex = CGFloat(1.0)
-    var scaley = CGFloat(1.0)
+    public var scalex = CGFloat(1.0)
+    public var scaley = CGFloat(1.0)
     private var _overscan : CGFloat = 1.0
     private var pointscale = CGFloat(0.75)
     
-    var overscan : CGFloat {
+    public var overscan : CGFloat {
         set {
             pointscale = pointscale / _overscan
             _overscan = newValue
@@ -36,17 +36,17 @@ class UlamDrawer:  NSObject {
     private let phi = Double(sqrt(5.0) + 1.0 ) / 2.0
     
     fileprivate var size : CGFloat = 100.0
-    var count : Int = 1
-    var countbase : Int = 1
+    public var count : Int = 1
+    public var countbase : Int = 1
     
-    var bsemiprimes = false
-    var bprimesizing = false
-    var bprimesphere = false
-    var colored = false
-    var ptspiral : TheUlamBase? = nil
-    var rmax : Double =  1.0
-    var offset = 0
-    var bdrawspiral = false
+    public var bsemiprimes = false
+    public var bprimesizing = false
+    public var bprimesphere = false
+    public var colored = false
+    public var ptspiral : TheUlamBase? = nil
+    public var rmax : Double =  1.0
+    public var offset = 0
+    public var bdrawspiral = false
     fileprivate var zoom : CGFloat = 1.0
     fileprivate var _pointwidth : CGFloat = 2.0
     fileprivate var pointwidth : CGFloat {
@@ -55,15 +55,15 @@ class UlamDrawer:  NSObject {
     }
     fileprivate var utype = UlamType.square
     fileprivate var _pstart : UInt64 = 2
-    var pstart : UInt64  {
+    public var pstart : UInt64  {
         set {
             _pstart = newValue
         }
         get { return _pstart }
     }
-    var direction : Int = 1
+    public var direction : Int = 1
     
-    init (pointcount : Int, utype : UlamType) {
+    public init (pointcount : Int, utype : UlamType) {
         super.init()
         self.utype = utype
         count = max(pointcount,2)
@@ -99,7 +99,7 @@ class UlamDrawer:  NSObject {
         return pointwidth
     }
     
-    func setZoom(_ newzoom : CGFloat) //,  absolute : Bool = false)
+    public func setZoom(_ newzoom : CGFloat) //,  absolute : Bool = false)
     {
         zoom = zoom * newzoom
         count = Int(CGFloat(countbase) / zoom / zoom)
@@ -107,7 +107,7 @@ class UlamDrawer:  NSObject {
         bdrawspiral = (count < 4000)
     }
     
-    func SetWidth(_ rect: CGRect) {
+    public func SetWidth(_ rect: CGRect) {
         let w = rect.size.width
         let h = rect.size.height
         size = min(w,h)
@@ -122,7 +122,7 @@ class UlamDrawer:  NSObject {
         rmax = ptspiral!.Radius(count)
     }
     
-    func getScreenXY(_ nr : Float) -> CGPoint {
+    public func getScreenXY(_ nr : Float) -> CGPoint {
         
         let spiral = getPoint(nr)
         let xp = CGFloat(spiral.x)
@@ -159,7 +159,7 @@ class UlamDrawer:  NSObject {
         return CGPoint(x: CGFloat(x*scalex), y: CGFloat(y*scaley))
     }
     
-    func prime_color(_ p : UInt64) -> CGColor {
+    public func prime_color(_ p : UInt64) -> CGColor {
         return Color.red.cgColor
     }
     
@@ -167,7 +167,7 @@ class UlamDrawer:  NSObject {
         return ptspiral!.getPoint(Int(x))
     }
     
-    func draw_spiral(_ context : CGContext) -> Void {
+    public func draw_spiral(_ context : CGContext) -> Void {
         
         if count > TheUlamBase.defcount || colored  {
             bdrawspiral = false
@@ -263,7 +263,7 @@ class UlamDrawer:  NSObject {
         }
     }
     
-    func draw_number(_ context : CGContext, ulamindex : Int, p: UInt64, color : Color) {
+    public func draw_number(_ context : CGContext, ulamindex : Int, p: UInt64, color : Color) {
         let screenpt = getScreenXY(Float(ulamindex))
         let xstart = screenpt.x - pointwidth * scalex * pointscale / 2.0
         let ystart = screenpt.y - pointwidth * scaley * pointscale / 2.0
@@ -275,7 +275,7 @@ class UlamDrawer:  NSObject {
         }
     }
     
-    func draw_primes(_ context: CGContext!, k0 : Int = 0, tlimit : CFTimeInterval = 5.0) -> Int
+    public func draw_primes(_ context: CGContext!, k0 : Int = 0, tlimit : CFTimeInterval = 5.0) -> Int
     {
         let starttime = CFAbsoluteTimeGetCurrent()
         let kstart = k0
