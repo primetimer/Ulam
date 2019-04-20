@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
     Your description here.
   DESC
-  s.homepage     = ""
+  s.homepage     = "www.primetimer.de"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "primetimer" => "primetimertime@gmail.com" }
   s.social_media_url   = ""
