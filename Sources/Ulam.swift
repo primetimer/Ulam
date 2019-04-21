@@ -67,9 +67,9 @@ public class UlamDrawer:  NSObject {
     }
     public var direction : Int = 1
     
-    public private (set) var prot: UlamDrawProtocol!
+    public var prot: UlamDrawProtocol? = nil
     
-    public init (pointcount : Int, utype : UlamType, prot: UlamDrawProtocol) {
+    public init (pointcount : Int, utype : UlamType, prot: UlamDrawProtocol? = nil) {
         super.init()
         self.prot = prot
         self.utype = utype
@@ -285,15 +285,17 @@ public class UlamDrawer:  NSObject {
             if (direction < 0) && (pstart <=  UInt64(j+1))  { continue }
             //let nr : UInt64 = UInt64( Int (pstart) + j * direction)
             let p = Int(pstart) + j * direction
-            let color = prot.getColor(p)
-            if colored {
-                DrawNumber(context, ulamindex: j, color : color)
-                continue
-            }
-//            if p.isPrime
-            do {
-                DrawNumber(context, ulamindex: j, color : color)
-                continue
+            if let prot = self.prot  {
+                let color = prot.getColor(p)
+                if colored {
+                    DrawNumber(context, ulamindex: j, color : color)
+                    continue
+                }
+                //            if p.isPrime
+                do {
+                    DrawNumber(context, ulamindex: j, color : color)
+                    continue
+                }
             }
         }
         return 0
