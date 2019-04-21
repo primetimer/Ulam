@@ -16,6 +16,10 @@ import Cocoa
 public typealias Color = NSColor
 #endif
 
+public protocol UlamDrawProtocol {
+    func getColor(_ n : Int) -> Color
+}
+
 public class UlamDrawer:  NSObject {
     
     public var scalex = CGFloat(1.0)
@@ -63,8 +67,11 @@ public class UlamDrawer:  NSObject {
     }
     public var direction : Int = 1
     
-    public init (pointcount : Int, utype : UlamType) {
+    public private (set) var prot: UlamDrawProtocol!
+    
+    public init (pointcount : Int, utype : UlamType, prot: UlamDrawProtocol) {
         super.init()
+        self.prot = prot
         self.utype = utype
         count = max(pointcount,2)
         
@@ -87,15 +94,7 @@ public class UlamDrawer:  NSObject {
         }
     }
     
-    internal func getColor(_ p : UInt64) -> Color
-    {
-//        if PrimeCache.shared.IsPrime(p: BigUInt(p)) {
-//            return .red
-//        }
-        return .green
-    }
-    
-    private func getPointSize(_ p: UInt64) -> CGFloat {
+    private func getPointSize(_ p: Int) -> CGFloat {
         return pointwidth
     }
     
@@ -123,7 +122,6 @@ public class UlamDrawer:  NSObject {
     }
     
     public func getScreenXY(_ nr : Float) -> CGPoint {
-        
         let spiral = getPoint(nr)
         let xp = CGFloat(spiral.x)
         let yp = CGFloat(spiral.y)
@@ -220,7 +218,7 @@ public class UlamDrawer:  NSObject {
     }
     
     
-    private func drawSphere(_ context : CGContext, xy: CGPoint, p : UInt64, color: Color  )
+    private func drawSphere(_ context : CGContext, xy: CGPoint, p : Int, color: Color  )
     {
         let r = getPointSize(p)
         var startPoint = CGPoint()
@@ -243,7 +241,7 @@ public class UlamDrawer:  NSObject {
                                     options: CGGradientDrawingOptions(rawValue: 0))
     }
     
-    private func drawRect(_ context : CGContext, xy: CGPoint, p : UInt64 , color : Color)
+    private func drawRect(_ context : CGContext, xy: CGPoint, p : Int , color : Color)
     {
         let r = getPointSize(p)
         var startPoint = CGPoint()
@@ -263,19 +261,19 @@ public class UlamDrawer:  NSObject {
         }
     }
     
-    public func draw_number(_ context : CGContext, ulamindex : Int, p: UInt64, color : Color) {
+    public func DrawNumber(_ context : CGContext, ulamindex : Int, color : Color) {
         let screenpt = getScreenXY(Float(ulamindex))
         let xstart = screenpt.x - pointwidth * scalex * pointscale / 2.0
         let ystart = screenpt.y - pointwidth * scaley * pointscale / 2.0
         let xy = CGPoint(x: xstart, y: ystart)
         if bprimesphere {
-            drawSphere(context,xy: xy, p: p, color : color)
+            drawSphere(context,xy: xy, p: ulamindex, color : color)
         } else {
-            drawRect(context, xy: xy, p: p, color: color)
+            drawRect(context, xy: xy, p: ulamindex, color: color)
         }
     }
     
-    public func draw_primes(_ context: CGContext!, k0 : Int = 0, tlimit : CFTimeInterval = 5.0) -> Int
+    public func DrawSpiral(_ context: CGContext!, k0 : Int = 0, tlimit : CFTimeInterval = 5.0) -> Int
     {
         let starttime = CFAbsoluteTimeGetCurrent()
         let kstart = k0
@@ -285,16 +283,16 @@ public class UlamDrawer:  NSObject {
             if (tlimit>0) && (deltatime > tlimit) { return k }
             let j = count - 1 - k
             if (direction < 0) && (pstart <=  UInt64(j+1))  { continue }
-            let nr : UInt64 = UInt64( Int (pstart) + j * direction)
-            let p = nr
-            let color = getColor(p)
+            //let nr : UInt64 = UInt64( Int (pstart) + j * direction)
+            let p = Int(pstart) + j * direction
+            let color = prot.getColor(p)
             if colored {
-                draw_number(context, ulamindex: j, p: p, color : color)
+                DrawNumber(context, ulamindex: j, color : color)
                 continue
             }
 //            if p.isPrime
             do {
-                draw_number(context, ulamindex: j, p: p, color : color)
+                DrawNumber(context, ulamindex: j, color : color)
                 continue
             }
         }

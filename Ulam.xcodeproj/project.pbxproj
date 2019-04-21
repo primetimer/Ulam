@@ -12,6 +12,14 @@
 		844365762259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
 		844365772259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
 		844365782259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
+		84F1BA3F226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
+		84F1BA40226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
+		84F1BA41226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
+		84F1BA42226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
+		84F1BA43226C7833009AC9DC /* SequenceDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */; };
+		84F1BA44226C7834009AC9DC /* SequenceDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */; };
+		84F1BA45226C7834009AC9DC /* SequenceDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */; };
+		84F1BA46226C7835009AC9DC /* SequenceDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */; };
 		8933C7851EB5B820000D00A4 /* Ulam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Ulam.swift */; };
 		8933C7861EB5B820000D00A4 /* Ulam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Ulam.swift */; };
 		8933C7871EB5B820000D00A4 /* Ulam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* Ulam.swift */; };
@@ -55,6 +63,8 @@
 		52D6DA0F1BF000BD002C0205 /* Ulam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ulam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844365742259CC0900F2FD6E /* TheUlam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheUlam.swift; sourceTree = "<group>"; };
 		84F1BA33226B15E9009AC9DC /* Ulam.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ulam.podspec; sourceTree = "<group>"; };
+		84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceDrawer.swift; sourceTree = "<group>"; };
+		84F1BA3E226C4A80009AC9DC /* DrawNr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawNr.swift; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* Ulam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ulam.swift; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* UlamTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UlamTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* Ulam.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ulam.plist; sourceTree = "<group>"; };
@@ -158,6 +168,8 @@
 			children = (
 				8933C7841EB5B820000D00A4 /* Ulam.swift */,
 				844365742259CC0900F2FD6E /* TheUlam.swift */,
+				84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */,
+				84F1BA3E226C4A80009AC9DC /* DrawNr.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -472,6 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1BA3F226C4A80009AC9DC /* DrawNr.swift in Sources */,
+				84F1BA43226C7833009AC9DC /* SequenceDrawer.swift in Sources */,
 				844365752259CC0900F2FD6E /* TheUlam.swift in Sources */,
 				8933C7851EB5B820000D00A4 /* Ulam.swift in Sources */,
 			);
@@ -489,6 +503,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1BA41226C4A80009AC9DC /* DrawNr.swift in Sources */,
+				84F1BA45226C7834009AC9DC /* SequenceDrawer.swift in Sources */,
 				844365772259CC0900F2FD6E /* TheUlam.swift in Sources */,
 				8933C7871EB5B820000D00A4 /* Ulam.swift in Sources */,
 			);
@@ -498,6 +514,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1BA42226C4A80009AC9DC /* DrawNr.swift in Sources */,
+				84F1BA46226C7835009AC9DC /* SequenceDrawer.swift in Sources */,
 				844365782259CC0900F2FD6E /* TheUlam.swift in Sources */,
 				8933C7881EB5B820000D00A4 /* Ulam.swift in Sources */,
 			);
@@ -507,6 +525,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F1BA40226C4A80009AC9DC /* DrawNr.swift in Sources */,
+				84F1BA44226C7834009AC9DC /* SequenceDrawer.swift in Sources */,
 				844365762259CC0900F2FD6E /* TheUlam.swift in Sources */,
 				8933C7861EB5B820000D00A4 /* Ulam.swift in Sources */,
 			);

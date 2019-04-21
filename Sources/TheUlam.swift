@@ -12,13 +12,6 @@ public enum UlamType : Int {
     case square = 0, spiral = 1, fibonacci = 2, lucas = 3, hexagon = 4, linear = 5
 }
 
-#if false
-let theulamrect = TheUlamRect()
-let theulamspiral = TheUlamRound()
-let theulamexplode = TheUlamFibonacci()
-let theulamhexagon = TheUlamHexagon()
-#endif
-
 public typealias SpiralXY = (x: Float, y: Float)
 
 public class TheUlamBase  {
@@ -148,8 +141,6 @@ public class TheUlamHexagon : TheUlamBase {
 
 public class TheUlamRect : TheUlamBase {
     static let sharedInstance = TheUlamRect()
-    
-    
     
     override func getPoint(_ n : Int) -> SpiralXY
     {
