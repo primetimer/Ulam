@@ -6,7 +6,7 @@
 //  Copyright © 2016 esjot. All rights reserved.
 //
 
-//dummy
+//dummy2
 import Foundation
 
 #if os(iOS) || os(tvOS) || os(watchOS)
