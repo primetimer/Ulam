@@ -25,6 +25,15 @@
 		844365762259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
 		844365772259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
 		844365782259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
+		849E3C852276052B00BCEDB2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E3C832276052B00BCEDB2 /* Interface.storyboard */; };
+		849E3C872276052C00BCEDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849E3C862276052C00BCEDB2 /* Assets.xcassets */; };
+		849E3C8E2276052C00BCEDB2 /* UlamWatchDemo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 849E3C8D2276052C00BCEDB2 /* UlamWatchDemo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		849E3C932276052C00BCEDB2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E3C922276052C00BCEDB2 /* InterfaceController.swift */; };
+		849E3C952276052C00BCEDB2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E3C942276052C00BCEDB2 /* ExtensionDelegate.swift */; };
+		849E3C972276052C00BCEDB2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E3C962276052C00BCEDB2 /* NotificationController.swift */; };
+		849E3C992276052D00BCEDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849E3C982276052D00BCEDB2 /* Assets.xcassets */; };
+		849E3C9E2276052D00BCEDB2 /* UlamWatchDemo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 849E3C812276052B00BCEDB2 /* UlamWatchDemo.app */; };
+		849E3CA72276075000BCEDB2 /* Ulam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9E21BEFFF6E002C0205 /* Ulam.framework */; };
 		84F1BA3F226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
 		84F1BA40226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
 		84F1BA41226C4A80009AC9DC /* DrawNr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1BA3E226C4A80009AC9DC /* DrawNr.swift */; };
@@ -66,6 +75,20 @@
 			remoteGlobalIDString = 84268C7B22758D8200E66A6C;
 			remoteInfo = UlamDemoMc;
 		};
+		849E3C8F2276052C00BCEDB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849E3C8C2276052C00BCEDB2;
+			remoteInfo = "UlamWatchDemo Extension";
+		};
+		849E3C9C2276052D00BCEDB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849E3C802276052B00BCEDB2;
+			remoteInfo = UlamWatchDemo;
+		};
 		DD7502801C68FCFC006590AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
@@ -81,6 +104,31 @@
 			remoteInfo = "Ulam-tvOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		849E3CA42276052D00BCEDB2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				849E3C8E2276052C00BCEDB2 /* UlamWatchDemo Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849E3CA62276052D00BCEDB2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				849E3C9E2276052D00BCEDB2 /* UlamWatchDemo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52D6D97C1BEFF229002C0205 /* Ulam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ulam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +157,17 @@
 		84268C9122758D8300E66A6C /* UlamDemoMcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlamDemoMcTests.swift; sourceTree = "<group>"; };
 		84268C9322758D8300E66A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844365742259CC0900F2FD6E /* TheUlam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheUlam.swift; sourceTree = "<group>"; };
+		849E3C812276052B00BCEDB2 /* UlamWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UlamWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849E3C842276052B00BCEDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		849E3C862276052C00BCEDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849E3C882276052C00BCEDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849E3C8D2276052C00BCEDB2 /* UlamWatchDemo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UlamWatchDemo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849E3C922276052C00BCEDB2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		849E3C942276052C00BCEDB2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		849E3C962276052C00BCEDB2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		849E3C982276052D00BCEDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849E3C9A2276052D00BCEDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849E3C9B2276052D00BCEDB2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		84F1BA33226B15E9009AC9DC /* Ulam.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ulam.podspec; sourceTree = "<group>"; };
 		84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceDrawer.swift; sourceTree = "<group>"; };
 		84F1BA3E226C4A80009AC9DC /* DrawNr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawNr.swift; sourceTree = "<group>"; };
@@ -187,6 +246,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849E3C8A2276052C00BCEDB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E3CA72276075000BCEDB2 /* Ulam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7502771C68FCFC006590AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,6 +284,8 @@
 				84268C6E22758AD600E66A6C /* UlamDemoTests */,
 				84268C7D22758D8200E66A6C /* UlamDemoMc */,
 				84268C9022758D8300E66A6C /* UlamDemoMcTests */,
+				849E3C822276052B00BCEDB2 /* UlamWatchDemo */,
+				849E3C912276052C00BCEDB2 /* UlamWatchDemo Extension */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 				84268C9C22758F9000E66A6C /* Frameworks */,
 			);
@@ -236,6 +305,8 @@
 				84268C6B22758AD600E66A6C /* UlamDemoTests.xctest */,
 				84268C7C22758D8200E66A6C /* UlamDemoMc.app */,
 				84268C8D22758D8300E66A6C /* UlamDemoMcTests.xctest */,
+				849E3C812276052B00BCEDB2 /* UlamWatchDemo.app */,
+				849E3C8D2276052C00BCEDB2 /* UlamWatchDemo Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,6 +369,29 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849E3C822276052B00BCEDB2 /* UlamWatchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				849E3C832276052B00BCEDB2 /* Interface.storyboard */,
+				849E3C862276052C00BCEDB2 /* Assets.xcassets */,
+				849E3C882276052C00BCEDB2 /* Info.plist */,
+			);
+			path = UlamWatchDemo;
+			sourceTree = "<group>";
+		};
+		849E3C912276052C00BCEDB2 /* UlamWatchDemo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				849E3C922276052C00BCEDB2 /* InterfaceController.swift */,
+				849E3C942276052C00BCEDB2 /* ExtensionDelegate.swift */,
+				849E3C962276052C00BCEDB2 /* NotificationController.swift */,
+				849E3C982276052D00BCEDB2 /* Assets.xcassets */,
+				849E3C9A2276052D00BCEDB2 /* Info.plist */,
+				849E3C9B2276052D00BCEDB2 /* PushNotificationPayload.apns */,
+			);
+			path = "UlamWatchDemo Extension";
 			sourceTree = "<group>";
 		};
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
@@ -467,10 +561,12 @@
 				84268C5422758AD300E66A6C /* Sources */,
 				84268C5522758AD300E66A6C /* Frameworks */,
 				84268C5622758AD300E66A6C /* Resources */,
+				849E3CA62276052D00BCEDB2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				849E3C9D2276052D00BCEDB2 /* PBXTargetDependency */,
 			);
 			name = UlamDemo;
 			productName = UlamDemo;
@@ -529,6 +625,40 @@
 			productName = UlamDemoMcTests;
 			productReference = 84268C8D22758D8300E66A6C /* UlamDemoMcTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		849E3C802276052B00BCEDB2 /* UlamWatchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849E3CA52276052D00BCEDB2 /* Build configuration list for PBXNativeTarget "UlamWatchDemo" */;
+			buildPhases = (
+				849E3C7F2276052B00BCEDB2 /* Resources */,
+				849E3CA42276052D00BCEDB2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849E3C902276052C00BCEDB2 /* PBXTargetDependency */,
+			);
+			name = UlamWatchDemo;
+			productName = UlamWatchDemo;
+			productReference = 849E3C812276052B00BCEDB2 /* UlamWatchDemo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		849E3C8C2276052C00BCEDB2 /* UlamWatchDemo Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849E3CA32276052D00BCEDB2 /* Build configuration list for PBXNativeTarget "UlamWatchDemo Extension" */;
+			buildPhases = (
+				849E3C892276052C00BCEDB2 /* Sources */,
+				849E3C8A2276052C00BCEDB2 /* Frameworks */,
+				849E3C8B2276052C00BCEDB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UlamWatchDemo Extension";
+			productName = "UlamWatchDemo Extension";
+			productReference = 849E3C8D2276052C00BCEDB2 /* UlamWatchDemo Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		DD7502791C68FCFC006590AF /* Ulam-macOS Tests */ = {
 			isa = PBXNativeTarget;
@@ -622,6 +752,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 84268C7B22758D8200E66A6C;
 					};
+					849E3C802276052B00BCEDB2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = DS739J79LU;
+						ProvisioningStyle = Automatic;
+					};
+					849E3C8C2276052C00BCEDB2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = DS739J79LU;
+						ProvisioningStyle = Automatic;
+					};
 					DD7502791C68FCFC006590AF = {
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 1020;
@@ -656,6 +796,8 @@
 				84268C6A22758AD600E66A6C /* UlamDemoTests */,
 				84268C7B22758D8200E66A6C /* UlamDemoMc */,
 				84268C8C22758D8300E66A6C /* UlamDemoMcTests */,
+				849E3C802276052B00BCEDB2 /* UlamWatchDemo */,
+				849E3C8C2276052C00BCEDB2 /* UlamWatchDemo Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -726,6 +868,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849E3C7F2276052B00BCEDB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E3C872276052C00BCEDB2 /* Assets.xcassets in Resources */,
+				849E3C852276052B00BCEDB2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849E3C8B2276052C00BCEDB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E3C992276052D00BCEDB2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +991,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849E3C892276052C00BCEDB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849E3C972276052C00BCEDB2 /* NotificationController.swift in Sources */,
+				849E3C952276052C00BCEDB2 /* ExtensionDelegate.swift in Sources */,
+				849E3C932276052C00BCEDB2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7502761C68FCFC006590AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -865,6 +1034,16 @@
 			isa = PBXTargetDependency;
 			target = 84268C7B22758D8200E66A6C /* UlamDemoMc */;
 			targetProxy = 84268C8E22758D8300E66A6C /* PBXContainerItemProxy */;
+		};
+		849E3C902276052C00BCEDB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849E3C8C2276052C00BCEDB2 /* UlamWatchDemo Extension */;
+			targetProxy = 849E3C8F2276052C00BCEDB2 /* PBXContainerItemProxy */;
+		};
+		849E3C9D2276052D00BCEDB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849E3C802276052B00BCEDB2 /* UlamWatchDemo */;
+			targetProxy = 849E3C9C2276052D00BCEDB2 /* PBXContainerItemProxy */;
 		};
 		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -901,6 +1080,14 @@
 				84268C8522758D8200E66A6C /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		849E3C832276052B00BCEDB2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849E3C842276052B00BCEDB2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1466,6 +1653,120 @@
 			};
 			name = Release;
 		};
+		849E3C9F2276052D00BCEDB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = UlamWatchDemo_Extension;
+				INFOPLIST_FILE = UlamWatchDemo/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		849E3CA02276052D00BCEDB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = UlamWatchDemo_Extension;
+				INFOPLIST_FILE = UlamWatchDemo/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		849E3CA12276052D00BCEDB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "UlamWatchDemo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		849E3CA22276052D00BCEDB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "UlamWatchDemo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
 		DD7502831C68FCFC006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1613,6 +1914,24 @@
 			buildConfigurations = (
 				84268C9822758D8300E66A6C /* Debug */,
 				84268C9922758D8300E66A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849E3CA32276052D00BCEDB2 /* Build configuration list for PBXNativeTarget "UlamWatchDemo Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849E3CA12276052D00BCEDB2 /* Debug */,
+				849E3CA22276052D00BCEDB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849E3CA52276052D00BCEDB2 /* Build configuration list for PBXNativeTarget "UlamWatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849E3C9F2276052D00BCEDB2 /* Debug */,
+				849E3CA02276052D00BCEDB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
