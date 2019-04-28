@@ -152,9 +152,15 @@ public class UlamDrawer:  NSObject {
             return CGPoint(x: xlin, y: ylin)
         }
         
-        
+        #if os(iOS) || os(tvOS) || os(watchOS)
         let x = (xp+1.0*CGFloat(rm)) * size / CGFloat(2.0*rm)
         let y = (yp+1.0*CGFloat(rm)) * size / CGFloat(2.0*rm)
+        #else
+        let x = (xp+1.0*CGFloat(rm)) * size / CGFloat(2.0*rm)
+        let y = size - (yp+1.0*CGFloat(rm)) * size / CGFloat(2.0*rm)
+        #endif
+        
+        
         return CGPoint(x: CGFloat(x*scalex), y: CGFloat(y*scaley))
     }
     
