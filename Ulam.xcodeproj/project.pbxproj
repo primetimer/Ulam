@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		52D6D9871BEFF229002C0205 /* Ulam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* Ulam.framework */; };
+		84268C5B22758AD300E66A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268C5A22758AD300E66A6C /* AppDelegate.swift */; };
+		84268C5D22758AD300E66A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268C5C22758AD300E66A6C /* ViewController.swift */; };
+		84268C6022758AD300E66A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84268C5E22758AD300E66A6C /* Main.storyboard */; };
+		84268C6222758AD600E66A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84268C6122758AD600E66A6C /* Assets.xcassets */; };
+		84268C6522758AD600E66A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84268C6322758AD600E66A6C /* LaunchScreen.storyboard */; };
+		84268C7022758AD600E66A6C /* UlamDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268C6F22758AD600E66A6C /* UlamDemoTests.swift */; };
 		844365752259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
 		844365762259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
 		844365772259CC0900F2FD6E /* TheUlam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844365742259CC0900F2FD6E /* TheUlam.swift */; };
@@ -39,6 +45,13 @@
 			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
 			remoteInfo = Ulam;
 		};
+		84268C6C22758AD600E66A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84268C5722758AD300E66A6C;
+			remoteInfo = UlamDemo;
+		};
 		DD7502801C68FCFC006590AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
@@ -61,6 +74,16 @@
 		52D6D9E21BEFFF6E002C0205 /* Ulam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ulam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9F01BEFFFBE002C0205 /* Ulam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ulam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6DA0F1BF000BD002C0205 /* Ulam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ulam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84268C5822758AD300E66A6C /* UlamDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UlamDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84268C5A22758AD300E66A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84268C5C22758AD300E66A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84268C5F22758AD300E66A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84268C6122758AD600E66A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84268C6422758AD600E66A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84268C6622758AD600E66A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84268C6B22758AD600E66A6C /* UlamDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UlamDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84268C6F22758AD600E66A6C /* UlamDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlamDemoTests.swift; sourceTree = "<group>"; };
+		84268C7122758AD600E66A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844365742259CC0900F2FD6E /* TheUlam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheUlam.swift; sourceTree = "<group>"; };
 		84F1BA33226B15E9009AC9DC /* Ulam.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ulam.podspec; sourceTree = "<group>"; };
 		84F1BA39226B37AB009AC9DC /* SequenceDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceDrawer.swift; sourceTree = "<group>"; };
@@ -110,6 +133,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84268C5522758AD300E66A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84268C6822758AD600E66A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7502771C68FCFC006590AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +173,8 @@
 				8933C7811EB5B7E0000D00A4 /* Sources */,
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
+				84268C5922758AD300E66A6C /* UlamDemo */,
+				84268C6E22758AD600E66A6C /* UlamDemoTests */,
 				52D6D97D1BEFF229002C0205 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +189,8 @@
 				52D6DA0F1BF000BD002C0205 /* Ulam.framework */,
 				DD75027A1C68FCFC006590AF /* Ulam-macOS Tests.xctest */,
 				DD75028D1C690C7A006590AF /* Ulam-tvOS Tests.xctest */,
+				84268C5822758AD300E66A6C /* UlamDemo.app */,
+				84268C6B22758AD600E66A6C /* UlamDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +202,28 @@
 				DD7502731C68FC20006590AF /* Tests */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		84268C5922758AD300E66A6C /* UlamDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84268C5A22758AD300E66A6C /* AppDelegate.swift */,
+				84268C5C22758AD300E66A6C /* ViewController.swift */,
+				84268C5E22758AD300E66A6C /* Main.storyboard */,
+				84268C6122758AD600E66A6C /* Assets.xcassets */,
+				84268C6322758AD600E66A6C /* LaunchScreen.storyboard */,
+				84268C6622758AD600E66A6C /* Info.plist */,
+			);
+			path = UlamDemo;
+			sourceTree = "<group>";
+		};
+		84268C6E22758AD600E66A6C /* UlamDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84268C6F22758AD600E66A6C /* UlamDemoTests.swift */,
+				84268C7122758AD600E66A6C /* Info.plist */,
+			);
+			path = UlamDemoTests;
 			sourceTree = "<group>";
 		};
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
@@ -323,6 +386,41 @@
 			productReference = 52D6DA0F1BF000BD002C0205 /* Ulam.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		84268C5722758AD300E66A6C /* UlamDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84268C7622758AD600E66A6C /* Build configuration list for PBXNativeTarget "UlamDemo" */;
+			buildPhases = (
+				84268C5422758AD300E66A6C /* Sources */,
+				84268C5522758AD300E66A6C /* Frameworks */,
+				84268C5622758AD300E66A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UlamDemo;
+			productName = UlamDemo;
+			productReference = 84268C5822758AD300E66A6C /* UlamDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84268C6A22758AD600E66A6C /* UlamDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84268C7722758AD600E66A6C /* Build configuration list for PBXNativeTarget "UlamDemoTests" */;
+			buildPhases = (
+				84268C6722758AD600E66A6C /* Sources */,
+				84268C6822758AD600E66A6C /* Frameworks */,
+				84268C6922758AD600E66A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84268C6D22758AD600E66A6C /* PBXTargetDependency */,
+			);
+			name = UlamDemoTests;
+			productName = UlamDemoTests;
+			productReference = 84268C6B22758AD600E66A6C /* UlamDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DD7502791C68FCFC006590AF /* Ulam-macOS Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "Ulam-macOS Tests" */;
@@ -365,7 +463,7 @@
 		52D6D9731BEFF229002C0205 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Ulam;
 				TargetAttributes = {
@@ -392,6 +490,17 @@
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = DS739J79LU;
 						LastSwiftMigration = 1020;
+					};
+					84268C5722758AD300E66A6C = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = DS739J79LU;
+						ProvisioningStyle = Automatic;
+					};
+					84268C6A22758AD600E66A6C = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = DS739J79LU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84268C5722758AD300E66A6C;
 					};
 					DD7502791C68FCFC006590AF = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -423,6 +532,8 @@
 				52D6D9851BEFF229002C0205 /* Ulam-iOS Tests */,
 				DD7502791C68FCFC006590AF /* Ulam-macOS Tests */,
 				DD75028C1C690C7A006590AF /* Ulam-tvOS Tests */,
+				84268C5722758AD300E66A6C /* UlamDemo */,
+				84268C6A22758AD600E66A6C /* UlamDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -457,6 +568,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		52D6DA0D1BF000BD002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84268C5622758AD300E66A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84268C6522758AD600E66A6C /* LaunchScreen.storyboard in Resources */,
+				84268C6222758AD600E66A6C /* Assets.xcassets in Resources */,
+				84268C6022758AD300E66A6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84268C6922758AD600E66A6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -532,6 +660,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84268C5422758AD300E66A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84268C5D22758AD300E66A6C /* ViewController.swift in Sources */,
+				84268C5B22758AD300E66A6C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84268C6722758AD600E66A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84268C7022758AD600E66A6C /* UlamDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7502761C68FCFC006590AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,6 +701,11 @@
 			target = 52D6D97B1BEFF229002C0205 /* Ulam-iOS */;
 			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
 		};
+		84268C6D22758AD600E66A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84268C5722758AD300E66A6C /* UlamDemo */;
+			targetProxy = 84268C6C22758AD600E66A6C /* PBXContainerItemProxy */;
+		};
 		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52D6DA0E1BF000BD002C0205 /* Ulam-macOS */;
@@ -567,6 +717,25 @@
 			targetProxy = DD7502931C690C7A006590AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84268C5E22758AD300E66A6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84268C5F22758AD300E66A6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84268C6322758AD600E66A6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84268C6422758AD600E66A6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52D6D98E1BEFF229002C0205 /* Debug */ = {
@@ -903,6 +1072,116 @@
 			};
 			name = Release;
 		};
+		84268C7222758AD600E66A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UlamDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84268C7322758AD600E66A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UlamDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84268C7422758AD600E66A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UlamDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UlamDemo.app/UlamDemo";
+			};
+			name = Debug;
+		};
+		84268C7522758AD600E66A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DS739J79LU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = UlamDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = esjot.UlamDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UlamDemo.app/UlamDemo";
+			};
+			name = Release;
+		};
 		DD7502831C68FCFC006590AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1014,6 +1293,24 @@
 			buildConfigurations = (
 				52D6DA211BF000BD002C0205 /* Debug */,
 				52D6DA221BF000BD002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84268C7622758AD600E66A6C /* Build configuration list for PBXNativeTarget "UlamDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84268C7222758AD600E66A6C /* Debug */,
+				84268C7322758AD600E66A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84268C7722758AD600E66A6C /* Build configuration list for PBXNativeTarget "UlamDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84268C7422758AD600E66A6C /* Debug */,
+				84268C7522758AD600E66A6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
